@@ -96,16 +96,24 @@ prev.addEventListener('click', prevSong);
 btn.addEventListener('click', () => {
     music_container.classList.toggle('dark');
     btn.classList.toggle('light'); 
+    
 
     if(btn.innerHTML === 'Night Mode') {
         btn.innerHTML = 'Day Mode';
         title.style.color = '#fff';
         prev.style.color = '#fff';
         next.style.color = '#fff';
+        
+        play.style.backgroundColor = '#f6f6f6';
+        play.style.color = '#111';
+
     } else {
         btn.innerHTML = 'Night Mode';
         title.style.color = '#171717';
         prev.style.color = '#171717';
         next.style.color = '#171717';
+        
+        play.style.backgroundColor = '#171717';
+        play.style.color = '#fff';
     }
 });
